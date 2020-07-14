@@ -11,7 +11,7 @@ Wait... How to use eBookmarker?
 
 - Highlight the line or heading you would like to use as a bookmark.
 - Open eBookmarker chrome extension to add this bookmark.
-- The bookmark will be added for the current URL. Remember, multiple bookmarks can be added for a particular.
+- The bookmark will be added for the current URL. Remember, multiple bookmarks can be added for a particular URL.
 
 So next time whenever you open eBookmarker on that URL, all your bookmarks would be visible.
 
