@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      body {
+          width: 300px;
+          height: 400px;
+      }
+     
+      .curr-selection {
+        background-color: rgba(128, 243, 243, 0.883);
+      }
+
+      .add  {
+        height: 30px;
+        width: 60%;
+        padding: 2px 2px 2px 2px;
+        background-color: rgba(9,30,66,.08);
+        color: #344563;
+        outline: 0;
+        margin:auto;
+        display: block;
+        margin-top: 10px !important;
+        margin-bottom: 4px !important;
+      }
+
+      .book-card {
+        width: auto;
+        height: auto;
+        padding: 2px 2px 2px 2px;
+        background-color: rgba(9,30,66,.08);
+        margin-bottom: 4px;
+        display: flex;
+      }
+
+      .book-card p {
+        font-size: 12px;
+        margin-top: 8px;
+        width: 50%;
+      }
+
+
+      .book-card button {
+        background-color: #673ab7;
+        color: white;
+        height: 30px;
+        cursor: pointer;
+        margin-top: 4px ;
+        width: 40%;
+      }
+
+      .book-card i {
+        color:#673ab7;
+        display: flex;
+        font-size: 24px !important;
+        margin-right: 1px;
+        width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Your Bookmarks for this page<h3/>
+    <div id="selections">
+    </div>
+    <div id="bookmarks">
+      
+    </div>
+    <script src="popup.js"></script>
+    <script src="fontawesome.js"></script> 
+  </body>
+</html>
