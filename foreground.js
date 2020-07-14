@@ -16,6 +16,9 @@ function setToStorage(x, y ,highlight) {
     }
 }
 
+/**
+ * Execute messages sent by popup
+ */
 chrome.runtime.onMessage.addListener(
     function(request) {
         if( request.message === "scroll" ) {
@@ -28,6 +31,10 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
+/**
+ * It stores the coordinates of lastest user selection (utilizes mouseup)
+ * Will not change until user selection is changed
+ */
 document.onmouseup = debounce(function(e) {
     if(window.userPrevSelection == window.getSelection().toString()) {
         return;
@@ -36,7 +43,7 @@ document.onmouseup = debounce(function(e) {
         x: e.pageX,
         y: e.pageY
     }
-    console.log(window.prevCord)
+    
     let highlight = window.getSelection().toString();
     window.userPrevSelection = highlight;
     setToStorage(prevCord.x, prevCord.y, highlight);

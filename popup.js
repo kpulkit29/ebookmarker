@@ -17,6 +17,10 @@ chrome.storage.local.get('positions', val => {
     
   });
 
+  /**
+   * 
+   * @param {MouseEvent} e 
+   */
 function addNewBookmark(e) {
     let x = e.target.getAttribute('data-x');
     let y = e.target.getAttribute('data-y');
@@ -60,6 +64,13 @@ function resetScreen() {
     document.getElementById("bookmarks").innerHTML = "";
 }
 
+/**
+ * 
+ * @param {string} x docX
+ * @param {string} y docY
+ * @param {string} text  
+ * Utility function to created bookmark card containing text
+ */
 function createBookmarkCard(x, y, text) {
     let card = document.createElement("div");
     card.classList.add("book-card");
@@ -87,6 +98,11 @@ document.onclick = function(e) {
     });
 }
 
+/**
+ * 
+ * @param {string} x DOCX
+ * @param {string} y DOCY
+ */
 function createButton(x, y) {
     let newSelection = document.createElement("button");
     newSelection.setAttribute("data-x",x);
@@ -95,6 +111,9 @@ function createButton(x, y) {
     return newSelection;
 } 
 
+/**
+ * Loads user's stored bookmarks for current url
+ */
 function loadCard() {
     chrome.storage.local.get("savedCoords", val => {
         const parsedSavedCoords = val.savedCoords && JSON.parse(val.savedCoords);
