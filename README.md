@@ -1,6 +1,6 @@
 # eBookmarker 🔖 🔖
 
-A chrome extension that let's you mark important stuff while you read. Isn't it frustrating to look for important topics (or maybe a topic where you left off) when you go through a document again after some time? Now no more searching/scrolling throughout the document, just use eBookmarker and it will land you exactly where you want to be. Not only is it helpful in keeping track of important stuff you read, but also where you left off.
+A chrome extension that lets you mark important stuff while you read. Isn't it frustrating to look for important topics (or maybe a topic where you left off) when you go through a document again after some time? Now no more searching/scrolling throughout the document, just use eBookmarker and it will land you exactly where you want to be. Not only is it helpful in keeping track of important stuff you read, but also where you left off.
 
 ## Find it here 
 [Chrome Web Store](https://chrome.google.com/webstore/detail/ebookmarker/famaacbnamnfdekclpjhfokjclimidce?hl=en&authuser=0)
